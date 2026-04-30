@@ -1,0 +1,2016 @@
+conclusion:
+
+####################################################################################################################################
+
+
+Best Hyperparameters:
+{'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Best Test Loss: 402.6833
+
+#####################################################################################################################################
+
+
+Related iteration:
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1486.2474 | Val Loss: 506.3792
+Epoch 50, Train Loss: 387.3044 | Val Loss: 297.3030
+Test Loss: 402.6833
+
+########################################################################################################################
+#                                                                                                                      #
+#     This is also one of the iterations where both training and validation loss kept decreasing (no overfitting)      #
+#                                                                                                                      #
+########################################################################################################################
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+Hyperparameters configuration:
+
+#####################################################################################################################################
+
+hyperparameters = {
+    "lr": [0.01, 0.001, 0.0001],
+    "epochs": [50, 100, 150],
+    "hidden_size": [32, 64],
+    "hidden_layers": [2, 3, 4],
+    "drop_value": [0.2, 0.3, 0.4],
+    "drop_out": [True, False],
+}
+
+#####################################################################################################################################
+
+
+
+
+###############################################
+#                                             #
+# I will provide the related code [a6_ex1.py] #
+#                                             #
+###############################################
+
+
+
+#####################################################################################################################################
+
+
+
+
+All 324 iterations:
+
+#####################################################################################################################################
+
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2004.5000 | Val Loss: 498.6537
+Epoch 50, Train Loss: 1054.4023 | Val Loss: 489.3792
+Test Loss: 1103.3164
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3415.9548 | Val Loss: 1042.7368
+Epoch 50, Train Loss: 1126.4267 | Val Loss: 1537.4313
+Test Loss: 1271.8623
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 11612.6933 | Val Loss: 2713.5662
+Epoch 50, Train Loss: 1344.8662 | Val Loss: 335.4372
+Test Loss: 732.9604
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1600.6854 | Val Loss: 278.6223
+Epoch 50, Train Loss: 816.9287 | Val Loss: 526.4292
+Test Loss: 724.3811
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2560.4301 | Val Loss: 1910.3375
+Epoch 50, Train Loss: 867.7305 | Val Loss: 412.0935
+Test Loss: 558.2874
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 8063.2955 | Val Loss: 3942.4925
+Epoch 50, Train Loss: 1043.1122 | Val Loss: 267.1145
+Test Loss: 447.1304
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2086.0135 | Val Loss: 416.7573
+Epoch 50, Train Loss: 1067.4357 | Val Loss: 582.9195
+Test Loss: 889.6595
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3185.9087 | Val Loss: 1303.1452
+Epoch 50, Train Loss: 1137.8524 | Val Loss: 1105.1121
+Test Loss: 1023.9908
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9743.9039 | Val Loss: 3730.1340
+Epoch 50, Train Loss: 1370.7657 | Val Loss: 343.2590
+Test Loss: 757.4834
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 2024.5845 | Val Loss: 755.7575
+Epoch 50, Train Loss: 1080.6094 | Val Loss: 885.0681
+Test Loss: 1451.3315
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2531.9770 | Val Loss: 835.8320
+Epoch 50, Train Loss: 790.0697 | Val Loss: 380.2438
+Test Loss: 707.6984
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6372.4139 | Val Loss: 3102.5807
+Epoch 50, Train Loss: 1002.4046 | Val Loss: 277.0151
+Test Loss: 457.5289
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2382.9026 | Val Loss: 347.9007
+Epoch 50, Train Loss: 1248.3262 | Val Loss: 432.4598
+Test Loss: 1117.0759
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3357.6716 | Val Loss: 837.8662
+Epoch 50, Train Loss: 1116.9311 | Val Loss: 588.5868
+Test Loss: 825.9429
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9248.0419 | Val Loss: 3937.4477
+Epoch 50, Train Loss: 1463.4996 | Val Loss: 274.5994
+Test Loss: 564.8811
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 2226.4253 | Val Loss: 981.2294
+Epoch 50, Train Loss: 1182.3499 | Val Loss: 1004.5029
+Test Loss: 1766.6202
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2419.9365 | Val Loss: 597.1540
+Epoch 50, Train Loss: 790.7213 | Val Loss: 347.3933
+Test Loss: 699.9587
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 5943.6381 | Val Loss: 3664.0451
+Epoch 50, Train Loss: 1008.3632 | Val Loss: 287.4525
+Test Loss: 462.6586
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1896.3375 | Val Loss: 414.2682
+Epoch 50, Train Loss: 994.5897 | Val Loss: 454.3567
+Epoch 100, Train Loss: 1108.1980 | Val Loss: 407.9413
+Test Loss: 708.0160
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3249.1614 | Val Loss: 1842.5760
+Epoch 50, Train Loss: 1061.7732 | Val Loss: 277.3901
+Epoch 100, Train Loss: 920.7419 | Val Loss: 391.3040
+Test Loss: 538.8827
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 11454.3163 | Val Loss: 2564.0497
+Epoch 50, Train Loss: 1349.9770 | Val Loss: 371.9471
+Epoch 100, Train Loss: 1211.7936 | Val Loss: 291.4145
+Test Loss: 643.4087
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1651.2421 | Val Loss: 422.7790
+Epoch 50, Train Loss: 857.9927 | Val Loss: 303.8564
+Epoch 100, Train Loss: 786.0411 | Val Loss: 450.7890
+Test Loss: 885.3804
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2511.3347 | Val Loss: 998.1918
+Epoch 50, Train Loss: 801.2440 | Val Loss: 369.4480
+Epoch 100, Train Loss: 755.0670 | Val Loss: 408.0197
+Test Loss: 1017.2661
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 8277.7411 | Val Loss: 4396.7949
+Epoch 50, Train Loss: 1041.3816 | Val Loss: 293.1185
+Epoch 100, Train Loss: 904.0680 | Val Loss: 246.0116
+Test Loss: 426.6185
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2175.7799 | Val Loss: 343.2292
+Epoch 50, Train Loss: 1093.0374 | Val Loss: 349.7568
+Epoch 100, Train Loss: 1078.8865 | Val Loss: 401.9970
+Test Loss: 860.4879
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3081.3497 | Val Loss: 560.4415
+Epoch 50, Train Loss: 1102.2330 | Val Loss: 394.1041
+Epoch 100, Train Loss: 1035.5990 | Val Loss: 418.9255
+Test Loss: 861.1396
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 10412.6584 | Val Loss: 4829.5323
+Epoch 50, Train Loss: 1440.3965 | Val Loss: 273.2901
+Epoch 100, Train Loss: 1311.3952 | Val Loss: 305.2542
+Test Loss: 567.0441
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1851.5301 | Val Loss: 756.0331
+Epoch 50, Train Loss: 919.8673 | Val Loss: 757.5708
+Epoch 100, Train Loss: 955.1586 | Val Loss: 778.9232
+Test Loss: 903.0563
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2205.0479 | Val Loss: 387.3799
+Epoch 50, Train Loss: 795.7478 | Val Loss: 396.6469
+Epoch 100, Train Loss: 730.6022 | Val Loss: 389.2338
+Test Loss: 563.8942
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6732.4254 | Val Loss: 4297.5147
+Epoch 50, Train Loss: 1019.2200 | Val Loss: 251.1987
+Epoch 100, Train Loss: 897.3503 | Val Loss: 312.9860
+Test Loss: 643.4418
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2326.0259 | Val Loss: 426.0260
+Epoch 50, Train Loss: 1140.9158 | Val Loss: 373.4867
+Epoch 100, Train Loss: 1165.4254 | Val Loss: 288.8896
+Test Loss: 882.5688
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3255.3818 | Val Loss: 2066.7092
+Epoch 50, Train Loss: 1093.5859 | Val Loss: 512.5587
+Epoch 100, Train Loss: 1038.0038 | Val Loss: 1327.5894
+Test Loss: 1807.8338
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9015.5233 | Val Loss: 5803.5499
+Epoch 50, Train Loss: 1430.1518 | Val Loss: 283.9145
+Epoch 100, Train Loss: 1257.1098 | Val Loss: 281.9808
+Test Loss: 476.3375
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 2151.4881 | Val Loss: 784.9965
+Epoch 50, Train Loss: 1099.8349 | Val Loss: 460.2840
+Epoch 100, Train Loss: 1104.5802 | Val Loss: 520.0639
+Test Loss: 833.4209
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2280.2895 | Val Loss: 407.2067
+Epoch 50, Train Loss: 814.9719 | Val Loss: 412.6322
+Epoch 100, Train Loss: 735.4310 | Val Loss: 469.6142
+Test Loss: 889.0792
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6247.3200 | Val Loss: 5131.4435
+Epoch 50, Train Loss: 1015.9645 | Val Loss: 232.5567
+Epoch 100, Train Loss: 923.4237 | Val Loss: 257.4413
+Test Loss: 428.8998
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1883.3108 | Val Loss: 343.4983
+Epoch 50, Train Loss: 1009.9261 | Val Loss: 466.9745
+Epoch 100, Train Loss: 927.4861 | Val Loss: 647.6647
+Epoch 150, Train Loss: 882.7669 | Val Loss: 700.1453
+Test Loss: 677.8146
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2984.9753 | Val Loss: 1072.5941
+Epoch 50, Train Loss: 1108.2616 | Val Loss: 1819.6886
+Epoch 100, Train Loss: 1068.0698 | Val Loss: 1593.8886
+Epoch 150, Train Loss: 1048.5344 | Val Loss: 2256.7316
+Test Loss: 2018.1115
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 11316.4861 | Val Loss: 2368.2063
+Epoch 50, Train Loss: 1352.9718 | Val Loss: 340.2877
+Epoch 100, Train Loss: 1262.3866 | Val Loss: 332.2918
+Epoch 150, Train Loss: 1196.7642 | Val Loss: 449.6418
+Test Loss: 665.3080
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1640.5318 | Val Loss: 410.9337
+Epoch 50, Train Loss: 806.5770 | Val Loss: 856.7718
+Epoch 100, Train Loss: 772.3574 | Val Loss: 842.7763
+Epoch 150, Train Loss: 741.5280 | Val Loss: 491.5751
+Test Loss: 979.6419
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2446.9268 | Val Loss: 1491.3600
+Epoch 50, Train Loss: 796.9716 | Val Loss: 432.7402
+Epoch 100, Train Loss: 732.9469 | Val Loss: 392.7791
+Epoch 150, Train Loss: 716.6211 | Val Loss: 449.5678
+Test Loss: 796.5434
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 7904.3641 | Val Loss: 3461.9230
+Epoch 50, Train Loss: 1037.1808 | Val Loss: 284.3832
+Epoch 100, Train Loss: 909.7302 | Val Loss: 237.1338
+Epoch 150, Train Loss: 855.1653 | Val Loss: 239.8263
+Test Loss: 405.6507
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2250.6589 | Val Loss: 496.1020
+Epoch 50, Train Loss: 1157.0196 | Val Loss: 434.8341
+Epoch 100, Train Loss: 1068.4933 | Val Loss: 578.8893
+Epoch 150, Train Loss: 1136.6419 | Val Loss: 359.1261
+Test Loss: 1447.2494
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3109.2272 | Val Loss: 1569.3724
+Epoch 50, Train Loss: 1193.9396 | Val Loss: 601.6052
+Epoch 100, Train Loss: 1116.5260 | Val Loss: 1427.0178
+Epoch 150, Train Loss: 1061.6394 | Val Loss: 1475.9400
+Test Loss: 1814.7687
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9782.7760 | Val Loss: 3349.5695
+Epoch 50, Train Loss: 1352.4762 | Val Loss: 291.9937
+Epoch 100, Train Loss: 1208.5336 | Val Loss: 282.1227
+Epoch 150, Train Loss: 1131.9720 | Val Loss: 306.9295
+Test Loss: 488.8222
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1909.8602 | Val Loss: 492.1644
+Epoch 50, Train Loss: 1015.8332 | Val Loss: 554.1309
+Epoch 100, Train Loss: 1078.5926 | Val Loss: 580.5169
+Epoch 150, Train Loss: 1169.1074 | Val Loss: 744.2563
+Test Loss: 1990.1700
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2386.0354 | Val Loss: 371.9572
+Epoch 50, Train Loss: 800.8826 | Val Loss: 378.8024
+Epoch 100, Train Loss: 747.0345 | Val Loss: 413.3631
+Epoch 150, Train Loss: 697.7615 | Val Loss: 416.3677
+Test Loss: 1246.3443
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 7077.8103 | Val Loss: 3372.5082
+Epoch 50, Train Loss: 1002.7593 | Val Loss: 269.8701
+Epoch 100, Train Loss: 890.7965 | Val Loss: 285.4821
+Epoch 150, Train Loss: 869.8077 | Val Loss: 301.3705
+Test Loss: 561.1554
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2494.5468 | Val Loss: 314.3066
+Epoch 50, Train Loss: 1211.0627 | Val Loss: 368.1563
+Epoch 100, Train Loss: 1132.5890 | Val Loss: 556.0022
+Epoch 150, Train Loss: 1122.3686 | Val Loss: 413.1743
+Test Loss: 973.4870
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3146.7326 | Val Loss: 745.7038
+Epoch 50, Train Loss: 1140.5790 | Val Loss: 392.7744
+Epoch 100, Train Loss: 1061.8249 | Val Loss: 644.8073
+Epoch 150, Train Loss: 1009.2424 | Val Loss: 914.7573
+Test Loss: 1698.9771
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 8892.8783 | Val Loss: 3441.5518
+Epoch 50, Train Loss: 1385.5478 | Val Loss: 258.8241
+Epoch 100, Train Loss: 1253.3489 | Val Loss: 275.2508
+Epoch 150, Train Loss: 1173.4356 | Val Loss: 303.2882
+Test Loss: 559.5754
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1986.2361 | Val Loss: 385.0479
+Epoch 50, Train Loss: 1122.4982 | Val Loss: 661.5109
+Epoch 100, Train Loss: 1021.3717 | Val Loss: 626.1027
+Epoch 150, Train Loss: 1150.7886 | Val Loss: 606.2192
+Test Loss: 1231.1339
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2315.5383 | Val Loss: 322.1202
+Epoch 50, Train Loss: 801.7539 | Val Loss: 398.0946
+Epoch 100, Train Loss: 725.6752 | Val Loss: 564.9095
+Epoch 150, Train Loss: 671.7187 | Val Loss: 475.1617
+Test Loss: 998.7913
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6423.0817 | Val Loss: 3384.3060
+Epoch 50, Train Loss: 1011.7311 | Val Loss: 279.8178
+Epoch 100, Train Loss: 897.1570 | Val Loss: 320.4315
+Epoch 150, Train Loss: 855.0859 | Val Loss: 316.9010
+Test Loss: 519.0111
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2122.6373 | Val Loss: 430.9450
+Epoch 50, Train Loss: 1381.7986 | Val Loss: 858.3233
+Test Loss: 1211.6049
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3668.7385 | Val Loss: 1198.5510
+Epoch 50, Train Loss: 1366.7234 | Val Loss: 1084.4016
+Test Loss: 870.6517
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 12157.8248 | Val Loss: 3616.8085
+Epoch 50, Train Loss: 1551.1338 | Val Loss: 486.8943
+Test Loss: 1136.4478
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1895.6322 | Val Loss: 528.4318
+Epoch 50, Train Loss: 980.4947 | Val Loss: 437.9533
+Test Loss: 1072.0794
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2681.1052 | Val Loss: 950.9610
+Epoch 50, Train Loss: 980.4051 | Val Loss: 352.7721
+Test Loss: 831.0932
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 8813.4077 | Val Loss: 3194.6892
+Epoch 50, Train Loss: 1315.4154 | Val Loss: 363.4311
+Test Loss: 675.9313
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2515.4540 | Val Loss: 408.4730
+Epoch 50, Train Loss: 1467.0192 | Val Loss: 555.8341
+Test Loss: 2119.3707
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3365.1061 | Val Loss: 807.7360
+Epoch 50, Train Loss: 1436.1475 | Val Loss: 787.3374
+Test Loss: 1067.7183
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 11072.6492 | Val Loss: 3496.5695
+Epoch 50, Train Loss: 1710.2373 | Val Loss: 377.7436
+Test Loss: 873.6157
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 2254.5914 | Val Loss: 569.2048
+Epoch 50, Train Loss: 1224.6956 | Val Loss: 514.4937
+Test Loss: 974.8701
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2742.0404 | Val Loss: 1797.9721
+Epoch 50, Train Loss: 1066.7289 | Val Loss: 399.3616
+Test Loss: 927.0315
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 7397.3118 | Val Loss: 5343.5922
+Epoch 50, Train Loss: 1201.8229 | Val Loss: 260.3987
+Test Loss: 464.0515
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2784.5288 | Val Loss: 488.9151
+Epoch 50, Train Loss: 1514.9554 | Val Loss: 433.8444
+Test Loss: 979.3873
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3570.0316 | Val Loss: 837.2323
+Epoch 50, Train Loss: 1399.0414 | Val Loss: 356.8193
+Test Loss: 651.1852
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9282.5838 | Val Loss: 4804.6029
+Epoch 50, Train Loss: 1779.7851 | Val Loss: 325.8044
+Test Loss: 800.9969
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 2718.6225 | Val Loss: 620.6099
+Epoch 50, Train Loss: 1481.6207 | Val Loss: 729.5008
+Test Loss: 1255.6338
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2769.0441 | Val Loss: 540.1204
+Epoch 50, Train Loss: 1019.5584 | Val Loss: 421.0948
+Test Loss: 894.2877
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6343.5081 | Val Loss: 5787.2554
+Epoch 50, Train Loss: 1268.9141 | Val Loss: 277.0103
+Test Loss: 518.5516
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2242.4701 | Val Loss: 602.5521
+Epoch 50, Train Loss: 1402.6611 | Val Loss: 1170.5585
+Epoch 100, Train Loss: 1368.2775 | Val Loss: 2540.3218
+Test Loss: 2158.1637
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3649.9148 | Val Loss: 1121.4242
+Epoch 50, Train Loss: 1359.6774 | Val Loss: 611.6226
+Epoch 100, Train Loss: 1287.4378 | Val Loss: 984.0829
+Test Loss: 836.6337
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 11982.5973 | Val Loss: 3288.7572
+Epoch 50, Train Loss: 1600.4632 | Val Loss: 371.4359
+Epoch 100, Train Loss: 1471.4455 | Val Loss: 356.6079
+Test Loss: 738.6351
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1903.6414 | Val Loss: 455.7507
+Epoch 50, Train Loss: 1094.0143 | Val Loss: 367.6568
+Epoch 100, Train Loss: 985.0394 | Val Loss: 660.0198
+Test Loss: 1166.9181
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2655.2300 | Val Loss: 599.0881
+Epoch 50, Train Loss: 955.6820 | Val Loss: 482.8938
+Epoch 100, Train Loss: 880.1492 | Val Loss: 497.8959
+Test Loss: 752.1879
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 8454.3544 | Val Loss: 2686.4196
+Epoch 50, Train Loss: 1224.0320 | Val Loss: 263.6278
+Epoch 100, Train Loss: 1101.2044 | Val Loss: 285.4735
+Test Loss: 500.8825
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2583.1521 | Val Loss: 789.6269
+Epoch 50, Train Loss: 1474.1280 | Val Loss: 411.1390
+Epoch 100, Train Loss: 1365.3089 | Val Loss: 649.6662
+Test Loss: 1932.5225
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3425.8930 | Val Loss: 943.9572
+Epoch 50, Train Loss: 1437.9216 | Val Loss: 1852.6988
+Epoch 100, Train Loss: 1357.8811 | Val Loss: 1908.5765
+Test Loss: 1019.5528
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9657.6625 | Val Loss: 3453.0005
+Epoch 50, Train Loss: 1627.0653 | Val Loss: 313.5524
+Epoch 100, Train Loss: 1488.8542 | Val Loss: 285.6025
+Test Loss: 564.6371
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 2160.0875 | Val Loss: 563.2591
+Epoch 50, Train Loss: 1312.3446 | Val Loss: 440.4768
+Epoch 100, Train Loss: 1225.2962 | Val Loss: 857.2222
+Test Loss: 1837.9885
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2822.3594 | Val Loss: 873.3025
+Epoch 50, Train Loss: 1028.8809 | Val Loss: 281.5772
+Epoch 100, Train Loss: 925.5092 | Val Loss: 538.6407
+Test Loss: 750.2379
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 7026.6402 | Val Loss: 4235.3234
+Epoch 50, Train Loss: 1223.6924 | Val Loss: 258.3624
+Epoch 100, Train Loss: 1122.7279 | Val Loss: 269.7273
+Test Loss: 465.9124
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 3017.1353 | Val Loss: 740.9150
+Epoch 50, Train Loss: 1495.0472 | Val Loss: 408.2078
+Epoch 100, Train Loss: 2159.0761 | Val Loss: 365.0875
+Test Loss: 1382.4051
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3622.5282 | Val Loss: 1207.2937
+Epoch 50, Train Loss: 1618.6185 | Val Loss: 439.3480
+Epoch 100, Train Loss: 1423.6763 | Val Loss: 861.6654
+Test Loss: 1356.2717
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9154.9701 | Val Loss: 2700.1941
+Epoch 50, Train Loss: 1725.3068 | Val Loss: 312.3573
+Epoch 100, Train Loss: 1564.7491 | Val Loss: 290.8864
+Test Loss: 631.9669
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 2497.6104 | Val Loss: 325.4688
+Epoch 50, Train Loss: 1610.8054 | Val Loss: 454.5531
+Epoch 100, Train Loss: 1588.6519 | Val Loss: 506.3612
+Test Loss: 1948.9771
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2635.9296 | Val Loss: 455.1859
+Epoch 50, Train Loss: 1060.2946 | Val Loss: 505.2924
+Epoch 100, Train Loss: 1009.0585 | Val Loss: 629.2734
+Test Loss: 706.3012
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6496.8699 | Val Loss: 3312.9771
+Epoch 50, Train Loss: 1170.8900 | Val Loss: 298.8988
+Epoch 100, Train Loss: 1072.8161 | Val Loss: 315.2603
+Test Loss: 555.5818
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2166.2713 | Val Loss: 368.1989
+Epoch 50, Train Loss: 1336.5061 | Val Loss: 745.0989
+Epoch 100, Train Loss: 1209.8839 | Val Loss: 1291.8616
+Epoch 150, Train Loss: 1224.0386 | Val Loss: 703.8981
+Test Loss: 2244.3900
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3434.7173 | Val Loss: 1124.3358
+Epoch 50, Train Loss: 1332.8142 | Val Loss: 1245.5066
+Epoch 100, Train Loss: 1271.3127 | Val Loss: 1360.4744
+Epoch 150, Train Loss: 1246.5104 | Val Loss: 2342.5220
+Test Loss: 1981.2691
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 12171.2181 | Val Loss: 3306.8844
+Epoch 50, Train Loss: 1630.3815 | Val Loss: 322.4832
+Epoch 100, Train Loss: 1507.1668 | Val Loss: 293.4232
+Epoch 150, Train Loss: 1456.3464 | Val Loss: 304.2187
+Test Loss: 670.6307
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1907.9761 | Val Loss: 441.6978
+Epoch 50, Train Loss: 1000.0776 | Val Loss: 350.9455
+Epoch 100, Train Loss: 1088.7484 | Val Loss: 568.8906
+Epoch 150, Train Loss: 980.3045 | Val Loss: 1191.9329
+Test Loss: 1551.8257
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2638.3740 | Val Loss: 861.8215
+Epoch 50, Train Loss: 1055.1654 | Val Loss: 614.3468
+Epoch 100, Train Loss: 966.0321 | Val Loss: 980.1212
+Epoch 150, Train Loss: 848.9508 | Val Loss: 606.7993
+Test Loss: 1345.3720
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 8781.6614 | Val Loss: 4724.1526
+Epoch 50, Train Loss: 1265.0511 | Val Loss: 270.2743
+Epoch 100, Train Loss: 1162.2058 | Val Loss: 259.8893
+Epoch 150, Train Loss: 1079.4125 | Val Loss: 327.4223
+Test Loss: 537.8067
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2585.3854 | Val Loss: 1012.1130
+Epoch 50, Train Loss: 1393.2312 | Val Loss: 398.7942
+Epoch 100, Train Loss: 1387.9853 | Val Loss: 432.7092
+Epoch 150, Train Loss: 1300.6655 | Val Loss: 350.8292
+Test Loss: 1996.2736
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3316.5930 | Val Loss: 534.5730
+Epoch 50, Train Loss: 1352.1647 | Val Loss: 598.7537
+Epoch 100, Train Loss: 1265.3349 | Val Loss: 505.8159
+Epoch 150, Train Loss: 1225.4505 | Val Loss: 659.7262
+Test Loss: 1332.6789
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9642.9603 | Val Loss: 2695.0641
+Epoch 50, Train Loss: 1647.6748 | Val Loss: 302.0182
+Epoch 100, Train Loss: 1462.8854 | Val Loss: 257.7730
+Epoch 150, Train Loss: 1399.2864 | Val Loss: 297.4566
+Test Loss: 580.1600
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 2176.3996 | Val Loss: 381.5507
+Epoch 50, Train Loss: 1218.2968 | Val Loss: 803.4814
+Epoch 100, Train Loss: 1170.9140 | Val Loss: 990.7169
+Epoch 150, Train Loss: 1122.3051 | Val Loss: 603.8371
+Test Loss: 1385.9595
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2708.6909 | Val Loss: 1223.6780
+Epoch 50, Train Loss: 1029.2400 | Val Loss: 320.3783
+Epoch 100, Train Loss: 917.8680 | Val Loss: 450.9750
+Epoch 150, Train Loss: 892.2983 | Val Loss: 475.6138
+Test Loss: 995.0441
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6918.8699 | Val Loss: 6285.7558
+Epoch 50, Train Loss: 1224.9657 | Val Loss: 262.7479
+Epoch 100, Train Loss: 1082.3516 | Val Loss: 243.5425
+Epoch 150, Train Loss: 1006.1919 | Val Loss: 266.8442
+Test Loss: 472.2563
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2990.3763 | Val Loss: 495.2122
+Epoch 50, Train Loss: 1530.5419 | Val Loss: 469.7944
+Epoch 100, Train Loss: 1452.1153 | Val Loss: 438.0071
+Epoch 150, Train Loss: 1535.0584 | Val Loss: 470.6128
+Test Loss: 1697.6253
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3399.9711 | Val Loss: 771.1122
+Epoch 50, Train Loss: 1457.6467 | Val Loss: 325.1923
+Epoch 100, Train Loss: 1412.0820 | Val Loss: 459.4262
+Epoch 150, Train Loss: 1296.9699 | Val Loss: 366.3359
+Test Loss: 618.8852
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9627.0744 | Val Loss: 3044.0339
+Epoch 50, Train Loss: 1790.3307 | Val Loss: 381.6390
+Epoch 100, Train Loss: 1656.6933 | Val Loss: 358.2100
+Epoch 150, Train Loss: 1629.9975 | Val Loss: 348.4262
+Test Loss: 711.2233
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 2545.2843 | Val Loss: 701.0852
+Epoch 50, Train Loss: 1382.4492 | Val Loss: 771.6688
+Epoch 100, Train Loss: 1416.5398 | Val Loss: 1209.6759
+Epoch 150, Train Loss: 1420.1405 | Val Loss: 1011.8148
+Test Loss: 1540.2773
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2627.0273 | Val Loss: 632.8628
+Epoch 50, Train Loss: 991.6613 | Val Loss: 316.0591
+Epoch 100, Train Loss: 927.1777 | Val Loss: 261.4741
+Epoch 150, Train Loss: 899.2925 | Val Loss: 335.8875
+Test Loss: 902.3878
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6454.6365 | Val Loss: 4260.1984
+Epoch 50, Train Loss: 1222.5439 | Val Loss: 303.6880
+Epoch 100, Train Loss: 1124.3884 | Val Loss: 310.9811
+Epoch 150, Train Loss: 1100.6627 | Val Loss: 314.7941
+Test Loss: 462.0671
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2553.1675 | Val Loss: 404.4867
+Epoch 50, Train Loss: 1530.3056 | Val Loss: 825.2380
+Test Loss: 1532.2713
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3973.2399 | Val Loss: 1095.8415
+Epoch 50, Train Loss: 1646.9340 | Val Loss: 816.0270
+Test Loss: 1111.7418
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 12093.4101 | Val Loss: 2418.5265
+Epoch 50, Train Loss: 1831.5052 | Val Loss: 404.9182
+Test Loss: 1045.6188
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 2173.4627 | Val Loss: 485.2961
+Epoch 50, Train Loss: 1176.1226 | Val Loss: 484.6427
+Test Loss: 1055.2938
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2790.3347 | Val Loss: 862.0013
+Epoch 50, Train Loss: 1127.6472 | Val Loss: 500.5713
+Test Loss: 560.0376
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 9353.4876 | Val Loss: 4153.0863
+Epoch 50, Train Loss: 1433.7689 | Val Loss: 372.6025
+Test Loss: 779.1440
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 3044.6875 | Val Loss: 451.2941
+Epoch 50, Train Loss: 1811.4046 | Val Loss: 553.1929
+Test Loss: 1395.6810
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 4021.7596 | Val Loss: 1151.1223
+Epoch 50, Train Loss: 1672.2363 | Val Loss: 485.1967
+Test Loss: 792.6890
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 11719.7483 | Val Loss: 2169.8638
+Epoch 50, Train Loss: 2020.8798 | Val Loss: 429.5068
+Test Loss: 1175.8274
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 2513.3848 | Val Loss: 370.5751
+Epoch 50, Train Loss: 1515.5579 | Val Loss: 676.8937
+Test Loss: 1776.3286
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 3000.4779 | Val Loss: 738.3817
+Epoch 50, Train Loss: 1227.6217 | Val Loss: 329.3965
+Test Loss: 544.9062
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 7134.0576 | Val Loss: 5553.1886
+Epoch 50, Train Loss: 1404.5949 | Val Loss: 276.6006
+Test Loss: 603.2019
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 3663.9594 | Val Loss: 377.3223
+Epoch 50, Train Loss: 2257.3299 | Val Loss: 694.7315
+Test Loss: 2473.3762
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 4273.3383 | Val Loss: 1101.0183
+Epoch 50, Train Loss: 1884.0597 | Val Loss: 524.9933
+Test Loss: 962.5825
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9825.5039 | Val Loss: 2387.8131
+Epoch 50, Train Loss: 2181.2844 | Val Loss: 392.8809
+Test Loss: 1179.1224
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 3278.0630 | Val Loss: 404.5037
+Epoch 50, Train Loss: 2009.6163 | Val Loss: 602.3657
+Test Loss: 2524.5451
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 3048.8261 | Val Loss: 411.4924
+Epoch 50, Train Loss: 1266.9117 | Val Loss: 320.6060
+Test Loss: 561.4915
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 7029.0870 | Val Loss: 4306.7398
+Epoch 50, Train Loss: 1449.7861 | Val Loss: 336.3193
+Test Loss: 677.6192
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2588.2828 | Val Loss: 548.7800
+Epoch 50, Train Loss: 1608.0840 | Val Loss: 1500.4502
+Epoch 100, Train Loss: 1411.1148 | Val Loss: 803.3968
+Test Loss: 3100.2704
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3669.0349 | Val Loss: 697.7345
+Epoch 50, Train Loss: 1549.6053 | Val Loss: 475.0748
+Epoch 100, Train Loss: 1526.1568 | Val Loss: 770.7887
+Test Loss: 868.6057
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 12037.0175 | Val Loss: 2652.2944
+Epoch 50, Train Loss: 1846.2569 | Val Loss: 430.9575
+Epoch 100, Train Loss: 1711.5811 | Val Loss: 379.0603
+Test Loss: 821.2001
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 2160.6839 | Val Loss: 349.4416
+Epoch 50, Train Loss: 1164.5631 | Val Loss: 546.5320
+Epoch 100, Train Loss: 1251.0308 | Val Loss: 670.5808
+Test Loss: 1211.0757
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2869.4515 | Val Loss: 627.6733
+Epoch 50, Train Loss: 1205.6817 | Val Loss: 618.4235
+Epoch 100, Train Loss: 1127.6292 | Val Loss: 874.8938
+Test Loss: 975.1843
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 9073.4658 | Val Loss: 4415.7533
+Epoch 50, Train Loss: 1427.2174 | Val Loss: 312.8219
+Epoch 100, Train Loss: 1324.0417 | Val Loss: 290.2524
+Test Loss: 599.5094
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 3019.2504 | Val Loss: 505.3003
+Epoch 50, Train Loss: 1863.6969 | Val Loss: 406.1432
+Epoch 100, Train Loss: 1862.0181 | Val Loss: 754.4595
+Test Loss: 4904.6420
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 4012.7471 | Val Loss: 874.4648
+Epoch 50, Train Loss: 1644.2537 | Val Loss: 1148.3780
+Epoch 100, Train Loss: 1553.8048 | Val Loss: 1349.1865
+Test Loss: 1094.6578
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 10883.8979 | Val Loss: 2786.1114
+Epoch 50, Train Loss: 2024.0967 | Val Loss: 441.5777
+Epoch 100, Train Loss: 1842.9637 | Val Loss: 357.7606
+Test Loss: 858.7010
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 2575.8843 | Val Loss: 449.2180
+Epoch 50, Train Loss: 1498.2035 | Val Loss: 764.0769
+Epoch 100, Train Loss: 1641.1995 | Val Loss: 939.3489
+Test Loss: 1662.6315
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2911.7464 | Val Loss: 437.5204
+Epoch 50, Train Loss: 1203.4367 | Val Loss: 439.7172
+Epoch 100, Train Loss: 1139.6529 | Val Loss: 435.4249
+Test Loss: 962.6192
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 8125.4495 | Val Loss: 2987.2134
+Epoch 50, Train Loss: 1431.6392 | Val Loss: 307.5228
+Epoch 100, Train Loss: 1299.3917 | Val Loss: 285.5422
+Test Loss: 522.8531
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 3462.5069 | Val Loss: 989.4016
+Epoch 50, Train Loss: 1967.1640 | Val Loss: 540.7434
+Epoch 100, Train Loss: 1888.5121 | Val Loss: 633.4827
+Test Loss: 2582.1346
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 4136.0800 | Val Loss: 914.9432
+Epoch 50, Train Loss: 1800.1489 | Val Loss: 365.6168
+Epoch 100, Train Loss: 1723.5343 | Val Loss: 353.0954
+Test Loss: 1174.5273
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 10035.3337 | Val Loss: 2957.9173
+Epoch 50, Train Loss: 2180.7778 | Val Loss: 427.2165
+Epoch 100, Train Loss: 2087.0005 | Val Loss: 419.8952
+Test Loss: 1002.7134
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 3255.9971 | Val Loss: 1357.0589
+Epoch 50, Train Loss: 1753.0954 | Val Loss: 614.1676
+Epoch 100, Train Loss: 2284.3038 | Val Loss: 849.4344
+Test Loss: 2238.7342
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 3132.0988 | Val Loss: 1075.2870
+Epoch 50, Train Loss: 1273.7548 | Val Loss: 318.9665
+Epoch 100, Train Loss: 1284.5558 | Val Loss: 319.4210
+Test Loss: 517.0924
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6989.9302 | Val Loss: 4942.4258
+Epoch 50, Train Loss: 1530.4917 | Val Loss: 295.9273
+Epoch 100, Train Loss: 1443.8672 | Val Loss: 305.3676
+Test Loss: 592.1936
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2606.2464 | Val Loss: 488.7280
+Epoch 50, Train Loss: 1522.0338 | Val Loss: 941.8287
+Epoch 100, Train Loss: 1642.5197 | Val Loss: 551.5186
+Epoch 150, Train Loss: 1441.9435 | Val Loss: 788.3977
+Test Loss: 3363.4034
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 4161.7109 | Val Loss: 1025.8289
+Epoch 50, Train Loss: 1585.5069 | Val Loss: 431.5969
+Epoch 100, Train Loss: 1556.8512 | Val Loss: 755.8398
+Epoch 150, Train Loss: 1533.8761 | Val Loss: 1218.3144
+Test Loss: 1093.5111
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 12078.8922 | Val Loss: 3047.8866
+Epoch 50, Train Loss: 1802.3785 | Val Loss: 461.7536
+Epoch 100, Train Loss: 1694.6558 | Val Loss: 387.7510
+Epoch 150, Train Loss: 1659.8032 | Val Loss: 353.6447
+Test Loss: 749.7596
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 2224.5990 | Val Loss: 441.7234
+Epoch 50, Train Loss: 1281.8950 | Val Loss: 463.0980
+Epoch 100, Train Loss: 1235.3224 | Val Loss: 602.0861
+Epoch 150, Train Loss: 1263.5788 | Val Loss: 582.3223
+Test Loss: 1235.2161
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2841.3260 | Val Loss: 607.5328
+Epoch 50, Train Loss: 1128.3669 | Val Loss: 370.2724
+Epoch 100, Train Loss: 1099.6509 | Val Loss: 443.2635
+Epoch 150, Train Loss: 1044.7715 | Val Loss: 720.4415
+Test Loss: 831.6173
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 9112.8005 | Val Loss: 6471.4062
+Epoch 50, Train Loss: 1432.0359 | Val Loss: 292.1104
+Epoch 100, Train Loss: 1265.9885 | Val Loss: 291.7261
+Epoch 150, Train Loss: 1217.5421 | Val Loss: 266.8596
+Test Loss: 519.1962
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 2855.8480 | Val Loss: 649.4645
+Epoch 50, Train Loss: 1870.8390 | Val Loss: 434.2500
+Epoch 100, Train Loss: 2081.3663 | Val Loss: 620.8464
+Epoch 150, Train Loss: 1988.2170 | Val Loss: 503.7780
+Test Loss: 2222.8977
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3835.0624 | Val Loss: 1174.9857
+Epoch 50, Train Loss: 1808.2825 | Val Loss: 624.0169
+Epoch 100, Train Loss: 1651.4143 | Val Loss: 1075.7184
+Epoch 150, Train Loss: 1531.9549 | Val Loss: 965.4223
+Test Loss: 1306.7660
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 10643.2581 | Val Loss: 3174.5390
+Epoch 50, Train Loss: 1916.3145 | Val Loss: 386.6768
+Epoch 100, Train Loss: 1834.0460 | Val Loss: 393.9723
+Epoch 150, Train Loss: 1805.2899 | Val Loss: 384.5522
+Test Loss: 871.8606
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 2604.6580 | Val Loss: 393.0229
+Epoch 50, Train Loss: 1525.2750 | Val Loss: 624.1658
+Epoch 100, Train Loss: 1549.1336 | Val Loss: 702.5889
+Epoch 150, Train Loss: 1620.9623 | Val Loss: 823.4591
+Test Loss: 1437.7283
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2919.4656 | Val Loss: 640.8132
+Epoch 50, Train Loss: 1222.5153 | Val Loss: 299.6240
+Epoch 100, Train Loss: 1144.9219 | Val Loss: 372.7847
+Epoch 150, Train Loss: 1136.7818 | Val Loss: 519.7083
+Test Loss: 733.6292
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 7127.7710 | Val Loss: 5444.8334
+Epoch 50, Train Loss: 1434.3558 | Val Loss: 268.0610
+Epoch 100, Train Loss: 1339.9159 | Val Loss: 298.9653
+Epoch 150, Train Loss: 1309.4035 | Val Loss: 298.3436
+Test Loss: 538.4829
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 3658.4894 | Val Loss: 618.5316
+Epoch 50, Train Loss: 2187.4489 | Val Loss: 641.0706
+Epoch 100, Train Loss: 2226.4887 | Val Loss: 654.1337
+Epoch 150, Train Loss: 2075.0535 | Val Loss: 534.1813
+Test Loss: 1814.1251
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 4533.9541 | Val Loss: 781.6065
+Epoch 50, Train Loss: 1831.0820 | Val Loss: 304.7915
+Epoch 100, Train Loss: 1733.9387 | Val Loss: 403.4665
+Epoch 150, Train Loss: 1607.3834 | Val Loss: 389.6387
+Test Loss: 1304.4611
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9951.2582 | Val Loss: 3030.1929
+Epoch 50, Train Loss: 2085.0675 | Val Loss: 369.2531
+Epoch 100, Train Loss: 1934.0144 | Val Loss: 377.4697
+Epoch 150, Train Loss: 1969.5717 | Val Loss: 393.0374
+Test Loss: 888.2273
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 3342.5293 | Val Loss: 485.0720
+Epoch 50, Train Loss: 2019.2747 | Val Loss: 915.2931
+Epoch 100, Train Loss: 2195.7407 | Val Loss: 869.8281
+Epoch 150, Train Loss: 2460.1961 | Val Loss: 782.0130
+Test Loss: 3017.9611
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 3023.7507 | Val Loss: 346.0084
+Epoch 50, Train Loss: 1348.4457 | Val Loss: 413.8453
+Epoch 100, Train Loss: 1281.1406 | Val Loss: 304.2475
+Epoch 150, Train Loss: 1196.5565 | Val Loss: 394.5983
+Test Loss: 1323.6941
+
+Hyperparameters: {'drop_out': True, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 7300.3015 | Val Loss: 3378.3014
+Epoch 50, Train Loss: 1487.7545 | Val Loss: 331.6379
+Epoch 100, Train Loss: 1376.4122 | Val Loss: 280.3629
+Epoch 150, Train Loss: 1322.6068 | Val Loss: 267.3910
+Test Loss: 481.2346
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1447.4347 | Val Loss: 379.4207
+Epoch 50, Train Loss: 386.2991 | Val Loss: 577.1151
+Test Loss: 795.3179
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2922.8093 | Val Loss: 1370.8435
+Epoch 50, Train Loss: 512.0404 | Val Loss: 482.9373
+Test Loss: 1802.2012
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 11074.8351 | Val Loss: 2176.2748
+Epoch 50, Train Loss: 860.9431 | Val Loss: 324.3845
+Test Loss: 492.3219
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1344.6775 | Val Loss: 295.7056
+Epoch 50, Train Loss: 346.1809 | Val Loss: 451.9983
+Test Loss: 914.7329
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2180.8721 | Val Loss: 358.7325
+Epoch 50, Train Loss: 411.7678 | Val Loss: 337.6448
+Test Loss: 656.8995
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 7872.1575 | Val Loss: 5123.9140
+Epoch 50, Train Loss: 686.6210 | Val Loss: 261.6068
+Test Loss: 470.8711
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1504.4232 | Val Loss: 468.6180
+Epoch 50, Train Loss: 386.9880 | Val Loss: 905.9606
+Test Loss: 845.6336
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2654.1761 | Val Loss: 1238.6734
+Epoch 50, Train Loss: 463.3148 | Val Loss: 461.8037
+Test Loss: 1012.0974
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9614.9563 | Val Loss: 3164.1597
+Epoch 50, Train Loss: 680.3516 | Val Loss: 264.2347
+Test Loss: 483.8078
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1276.9978 | Val Loss: 509.3215
+Epoch 50, Train Loss: 359.3246 | Val Loss: 302.7256
+Test Loss: 734.1336
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2102.0726 | Val Loss: 454.4247
+Epoch 50, Train Loss: 336.1170 | Val Loss: 418.5798
+Test Loss: 870.9935
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6595.9253 | Val Loss: 4815.1439
+Epoch 50, Train Loss: 595.0420 | Val Loss: 290.6211
+Test Loss: 512.0318
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1364.4797 | Val Loss: 392.0127
+Epoch 50, Train Loss: 421.7409 | Val Loss: 431.1529
+Test Loss: 947.4297
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2383.2086 | Val Loss: 1100.9826
+Epoch 50, Train Loss: 420.9948 | Val Loss: 304.2536
+Test Loss: 689.2077
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 8583.7170 | Val Loss: 4466.7291
+Epoch 50, Train Loss: 686.2188 | Val Loss: 323.9825
+Test Loss: 527.5729
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1344.0246 | Val Loss: 346.5861
+Epoch 50, Train Loss: 328.8292 | Val Loss: 390.7460
+Test Loss: 936.5146
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 1898.0074 | Val Loss: 357.6708
+Epoch 50, Train Loss: 275.8857 | Val Loss: 306.3139
+Test Loss: 751.7021
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 5145.4648 | Val Loss: 3785.0971
+Epoch 50, Train Loss: 535.0027 | Val Loss: 408.0423
+Test Loss: 757.4664
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1429.9161 | Val Loss: 357.4874
+Epoch 50, Train Loss: 381.1440 | Val Loss: 441.8945
+Epoch 100, Train Loss: 345.8455 | Val Loss: 432.6422
+Test Loss: 1208.4565
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2885.8436 | Val Loss: 726.2003
+Epoch 50, Train Loss: 521.6332 | Val Loss: 407.7862
+Epoch 100, Train Loss: 461.7422 | Val Loss: 334.5233
+Test Loss: 990.2754
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 11773.8602 | Val Loss: 2534.9658
+Epoch 50, Train Loss: 818.9577 | Val Loss: 280.9745
+Epoch 100, Train Loss: 671.8960 | Val Loss: 312.7749
+Test Loss: 454.0859
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1229.1181 | Val Loss: 522.9494
+Epoch 50, Train Loss: 333.6452 | Val Loss: 362.2289
+Epoch 100, Train Loss: 279.2358 | Val Loss: 368.6922
+Test Loss: 757.6209
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2208.3408 | Val Loss: 379.1871
+Epoch 50, Train Loss: 369.1500 | Val Loss: 691.0539
+Epoch 100, Train Loss: 275.1840 | Val Loss: 777.2583
+Test Loss: 1191.4814
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 7631.7351 | Val Loss: 2889.1402
+Epoch 50, Train Loss: 703.0846 | Val Loss: 278.8632
+Epoch 100, Train Loss: 584.8874 | Val Loss: 415.1639
+Test Loss: 554.5298
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1391.9868 | Val Loss: 308.8142
+Epoch 50, Train Loss: 404.8351 | Val Loss: 321.9692
+Epoch 100, Train Loss: 347.7327 | Val Loss: 336.2767
+Test Loss: 1305.4951
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2376.5462 | Val Loss: 452.1997
+Epoch 50, Train Loss: 440.1833 | Val Loss: 401.1209
+Epoch 100, Train Loss: 367.4832 | Val Loss: 587.6217
+Test Loss: 1062.9357
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9979.4722 | Val Loss: 4657.7080
+Epoch 50, Train Loss: 699.7272 | Val Loss: 325.4723
+Epoch 100, Train Loss: 597.3379 | Val Loss: 351.9297
+Test Loss: 623.4294
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1309.3885 | Val Loss: 339.8717
+Epoch 50, Train Loss: 332.3747 | Val Loss: 401.8566
+Epoch 100, Train Loss: 285.0127 | Val Loss: 536.1702
+Test Loss: 861.1527
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2059.8227 | Val Loss: 306.2923
+Epoch 50, Train Loss: 365.6022 | Val Loss: 846.4475
+Epoch 100, Train Loss: 256.9293 | Val Loss: 644.0759
+Test Loss: 1489.1776
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6377.4166 | Val Loss: 5639.9818
+Epoch 50, Train Loss: 554.4061 | Val Loss: 333.5439
+Epoch 100, Train Loss: 450.8665 | Val Loss: 364.9297
+Test Loss: 1176.2288
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1346.0998 | Val Loss: 402.7825
+Epoch 50, Train Loss: 413.8990 | Val Loss: 939.7868
+Epoch 100, Train Loss: 379.0631 | Val Loss: 1107.0684
+Test Loss: 1897.8574
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2423.2599 | Val Loss: 347.3315
+Epoch 50, Train Loss: 419.1414 | Val Loss: 470.7425
+Epoch 100, Train Loss: 339.4177 | Val Loss: 351.9573
+Test Loss: 834.8636
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 8796.6491 | Val Loss: 3467.8008
+Epoch 50, Train Loss: 680.9308 | Val Loss: 246.6274
+Epoch 100, Train Loss: 573.0014 | Val Loss: 291.1237
+Test Loss: 505.0549
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1345.8932 | Val Loss: 590.0297
+Epoch 50, Train Loss: 352.6991 | Val Loss: 526.4737
+Epoch 100, Train Loss: 310.9795 | Val Loss: 527.0438
+Test Loss: 901.9548
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 1914.0291 | Val Loss: 292.9000
+Epoch 50, Train Loss: 285.1780 | Val Loss: 492.6400
+Epoch 100, Train Loss: 187.7059 | Val Loss: 499.3675
+Test Loss: 1496.1323
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6175.4925 | Val Loss: 4530.6946
+Epoch 50, Train Loss: 530.4237 | Val Loss: 337.9172
+Epoch 100, Train Loss: 421.5367 | Val Loss: 368.1552
+Test Loss: 959.0320
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1540.2020 | Val Loss: 470.3916
+Epoch 50, Train Loss: 408.9157 | Val Loss: 359.6864
+Epoch 100, Train Loss: 357.1416 | Val Loss: 318.5850
+Epoch 150, Train Loss: 338.8348 | Val Loss: 459.0157
+Test Loss: 546.9036
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2782.1090 | Val Loss: 627.6707
+Epoch 50, Train Loss: 512.6388 | Val Loss: 525.0265
+Epoch 100, Train Loss: 446.2550 | Val Loss: 478.3008
+Epoch 150, Train Loss: 399.6399 | Val Loss: 477.8629
+Test Loss: 1020.3271
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 11411.5207 | Val Loss: 2888.4436
+Epoch 50, Train Loss: 829.2816 | Val Loss: 319.7885
+Epoch 100, Train Loss: 659.7824 | Val Loss: 305.1111
+Epoch 150, Train Loss: 592.7726 | Val Loss: 326.6449
+Test Loss: 528.0898
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1229.9220 | Val Loss: 483.0670
+Epoch 50, Train Loss: 330.7314 | Val Loss: 317.6685
+Epoch 100, Train Loss: 277.2157 | Val Loss: 371.4061
+Epoch 150, Train Loss: 252.3276 | Val Loss: 450.3278
+Test Loss: 1269.7543
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2148.1050 | Val Loss: 358.7084
+Epoch 50, Train Loss: 422.4126 | Val Loss: 502.1598
+Epoch 100, Train Loss: 334.3949 | Val Loss: 466.2984
+Epoch 150, Train Loss: 278.2857 | Val Loss: 439.4477
+Test Loss: 1011.2172
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 7789.8226 | Val Loss: 4686.9772
+Epoch 50, Train Loss: 647.7150 | Val Loss: 256.4322
+Epoch 100, Train Loss: 544.9515 | Val Loss: 300.2924
+Epoch 150, Train Loss: 481.1450 | Val Loss: 308.1119
+Test Loss: 538.6129
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1346.6107 | Val Loss: 685.3699
+Epoch 50, Train Loss: 406.5923 | Val Loss: 336.2912
+Epoch 100, Train Loss: 369.6658 | Val Loss: 483.4226
+Epoch 150, Train Loss: 325.2153 | Val Loss: 571.1455
+Test Loss: 1056.2433
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2527.2238 | Val Loss: 1492.3591
+Epoch 50, Train Loss: 459.6224 | Val Loss: 458.3424
+Epoch 100, Train Loss: 367.5627 | Val Loss: 380.5888
+Epoch 150, Train Loss: 320.2271 | Val Loss: 463.2530
+Test Loss: 743.1023
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9714.0136 | Val Loss: 4224.3368
+Epoch 50, Train Loss: 733.3930 | Val Loss: 277.9702
+Epoch 100, Train Loss: 612.0458 | Val Loss: 320.8576
+Epoch 150, Train Loss: 558.0500 | Val Loss: 337.6389
+Test Loss: 865.2690
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1229.4520 | Val Loss: 551.7043
+Epoch 50, Train Loss: 374.9960 | Val Loss: 485.2216
+Epoch 100, Train Loss: 321.9174 | Val Loss: 513.4309
+Epoch 150, Train Loss: 289.7509 | Val Loss: 524.4300
+Test Loss: 1510.2420
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 1960.0053 | Val Loss: 437.3658
+Epoch 50, Train Loss: 327.8256 | Val Loss: 348.2901
+Epoch 100, Train Loss: 233.1170 | Val Loss: 498.3228
+Epoch 150, Train Loss: 178.3587 | Val Loss: 508.6046
+Test Loss: 1287.8559
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6484.3158 | Val Loss: 4262.9539
+Epoch 50, Train Loss: 569.9860 | Val Loss: 292.2929
+Epoch 100, Train Loss: 476.3832 | Val Loss: 342.6571
+Epoch 150, Train Loss: 415.9853 | Val Loss: 340.3092
+Test Loss: 1396.2491
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1374.6310 | Val Loss: 447.8751
+Epoch 50, Train Loss: 398.9850 | Val Loss: 345.3322
+Epoch 100, Train Loss: 351.9742 | Val Loss: 947.7812
+Epoch 150, Train Loss: 323.9917 | Val Loss: 1487.7915
+Test Loss: 1261.8918
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2864.5204 | Val Loss: 1877.4130
+Epoch 50, Train Loss: 437.6624 | Val Loss: 415.1556
+Epoch 100, Train Loss: 338.9988 | Val Loss: 625.5057
+Epoch 150, Train Loss: 299.6815 | Val Loss: 496.4962
+Test Loss: 886.5578
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 8550.0292 | Val Loss: 3343.2403
+Epoch 50, Train Loss: 656.5825 | Val Loss: 332.1958
+Epoch 100, Train Loss: 549.8967 | Val Loss: 348.9226
+Epoch 150, Train Loss: 494.1938 | Val Loss: 375.1464
+Test Loss: 585.2436
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1339.4047 | Val Loss: 351.2689
+Epoch 50, Train Loss: 356.6568 | Val Loss: 645.0171
+Epoch 100, Train Loss: 319.3671 | Val Loss: 627.5761
+Epoch 150, Train Loss: 284.1687 | Val Loss: 669.7524
+Test Loss: 1142.5324
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 1849.0115 | Val Loss: 366.0946
+Epoch 50, Train Loss: 280.2934 | Val Loss: 399.5412
+Epoch 100, Train Loss: 198.0100 | Val Loss: 605.5727
+Epoch 150, Train Loss: 153.3356 | Val Loss: 551.2485
+Test Loss: 1464.8714
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.2, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 5882.9478 | Val Loss: 3284.7044
+Epoch 50, Train Loss: 508.4338 | Val Loss: 307.5834
+Epoch 100, Train Loss: 412.4805 | Val Loss: 318.4605
+Epoch 150, Train Loss: 360.7978 | Val Loss: 364.1117
+Test Loss: 1624.8888
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1485.7661 | Val Loss: 391.6873
+Epoch 50, Train Loss: 382.6556 | Val Loss: 341.6795
+Test Loss: 740.2911
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2842.6750 | Val Loss: 726.1206
+Epoch 50, Train Loss: 546.2844 | Val Loss: 520.3283
+Test Loss: 3099.4954
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 11088.8494 | Val Loss: 2320.3682
+Epoch 50, Train Loss: 859.3393 | Val Loss: 282.8836
+Test Loss: 501.8201
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1299.4859 | Val Loss: 689.2029
+Epoch 50, Train Loss: 326.8962 | Val Loss: 653.2477
+Test Loss: 1473.6543
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2381.0022 | Val Loss: 561.5021
+Epoch 50, Train Loss: 388.4463 | Val Loss: 414.3802
+Test Loss: 951.5745
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 8115.3081 | Val Loss: 3442.1973
+Epoch 50, Train Loss: 664.2682 | Val Loss: 296.0353
+Test Loss: 575.9812
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1432.0131 | Val Loss: 274.7216
+Epoch 50, Train Loss: 418.5121 | Val Loss: 342.2696
+Test Loss: 1165.1106
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2619.8921 | Val Loss: 715.3231
+Epoch 50, Train Loss: 440.7202 | Val Loss: 388.0943
+Test Loss: 714.7475
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9811.3437 | Val Loss: 3639.4870
+Epoch 50, Train Loss: 709.6100 | Val Loss: 287.5956
+Test Loss: 483.0148
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1326.0301 | Val Loss: 377.4674
+Epoch 50, Train Loss: 357.2069 | Val Loss: 444.1903
+Test Loss: 654.9705
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 1961.1558 | Val Loss: 396.5110
+Epoch 50, Train Loss: 311.8203 | Val Loss: 436.3362
+Test Loss: 1145.5371
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6604.1769 | Val Loss: 3035.9051
+Epoch 50, Train Loss: 577.7172 | Val Loss: 339.4637
+Test Loss: 921.7701
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1366.8202 | Val Loss: 517.7970
+Epoch 50, Train Loss: 426.6654 | Val Loss: 2093.3252
+Test Loss: 2105.2816
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2302.4210 | Val Loss: 398.7842
+Epoch 50, Train Loss: 422.4591 | Val Loss: 423.1015
+Test Loss: 801.0924
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 8336.2703 | Val Loss: 3035.3221
+Epoch 50, Train Loss: 650.9934 | Val Loss: 280.6962
+Test Loss: 522.7931
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1403.8017 | Val Loss: 409.8307
+Epoch 50, Train Loss: 344.0253 | Val Loss: 383.0155
+Test Loss: 729.7684
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 1956.7605 | Val Loss: 300.7407
+Epoch 50, Train Loss: 310.8708 | Val Loss: 426.3056
+Test Loss: 1061.1614
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 5813.2466 | Val Loss: 4738.3779
+Epoch 50, Train Loss: 550.6940 | Val Loss: 322.9392
+Test Loss: 879.5376
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1373.8113 | Val Loss: 472.9727
+Epoch 50, Train Loss: 408.4135 | Val Loss: 463.3170
+Epoch 100, Train Loss: 354.4887 | Val Loss: 461.2567
+Test Loss: 830.3140
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2800.0218 | Val Loss: 1302.5582
+Epoch 50, Train Loss: 493.3131 | Val Loss: 357.6403
+Epoch 100, Train Loss: 411.0273 | Val Loss: 332.6132
+Test Loss: 977.3707
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 11623.5897 | Val Loss: 2336.4884
+Epoch 50, Train Loss: 806.4823 | Val Loss: 249.4885
+Epoch 100, Train Loss: 671.7473 | Val Loss: 231.4100
+Test Loss: 447.4007
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1299.4655 | Val Loss: 710.0535
+Epoch 50, Train Loss: 327.0560 | Val Loss: 359.8720
+Epoch 100, Train Loss: 257.5815 | Val Loss: 561.2483
+Test Loss: 1632.7295
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2069.3583 | Val Loss: 450.3822
+Epoch 50, Train Loss: 391.7499 | Val Loss: 526.4927
+Epoch 100, Train Loss: 306.1500 | Val Loss: 931.1768
+Test Loss: 907.6814
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 7850.9398 | Val Loss: 3727.6593
+Epoch 50, Train Loss: 644.7314 | Val Loss: 268.7055
+Epoch 100, Train Loss: 518.9302 | Val Loss: 445.5778
+Test Loss: 931.3586
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1526.7829 | Val Loss: 488.7576
+Epoch 50, Train Loss: 395.6625 | Val Loss: 396.4626
+Epoch 100, Train Loss: 345.7304 | Val Loss: 437.4626
+Test Loss: 983.0749
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2555.7877 | Val Loss: 856.3602
+Epoch 50, Train Loss: 446.1101 | Val Loss: 225.5362
+Epoch 100, Train Loss: 382.8762 | Val Loss: 278.2382
+Test Loss: 1114.6320
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9855.4294 | Val Loss: 4356.8866
+Epoch 50, Train Loss: 708.7550 | Val Loss: 302.6451
+Epoch 100, Train Loss: 575.3953 | Val Loss: 305.2759
+Test Loss: 763.8634
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1326.1112 | Val Loss: 487.8348
+Epoch 50, Train Loss: 350.5513 | Val Loss: 360.2777
+Epoch 100, Train Loss: 302.6588 | Val Loss: 482.0019
+Test Loss: 1428.9915
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2002.7342 | Val Loss: 368.7464
+Epoch 50, Train Loss: 350.7236 | Val Loss: 450.6346
+Epoch 100, Train Loss: 253.4432 | Val Loss: 459.0227
+Test Loss: 903.9722
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6256.5037 | Val Loss: 4404.4854
+Epoch 50, Train Loss: 584.4724 | Val Loss: 329.2049
+Epoch 100, Train Loss: 466.8800 | Val Loss: 328.1070
+Test Loss: 954.7342
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1484.4595 | Val Loss: 555.1079
+Epoch 50, Train Loss: 414.2160 | Val Loss: 444.4241
+Epoch 100, Train Loss: 353.4600 | Val Loss: 454.8305
+Test Loss: 995.0619
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2509.8756 | Val Loss: 2359.3385
+Epoch 50, Train Loss: 413.3165 | Val Loss: 341.0407
+Epoch 100, Train Loss: 343.0813 | Val Loss: 396.2228
+Test Loss: 939.9091
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9253.9568 | Val Loss: 3081.3068
+Epoch 50, Train Loss: 688.7427 | Val Loss: 292.8327
+Epoch 100, Train Loss: 569.0789 | Val Loss: 330.7388
+Test Loss: 619.6195
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1375.1033 | Val Loss: 395.5343
+Epoch 50, Train Loss: 328.8280 | Val Loss: 453.4827
+Epoch 100, Train Loss: 267.4662 | Val Loss: 450.5991
+Test Loss: 1022.7578
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 1840.8825 | Val Loss: 350.5943
+Epoch 50, Train Loss: 287.6135 | Val Loss: 280.7371
+Epoch 100, Train Loss: 194.7239 | Val Loss: 385.4666
+Test Loss: 1262.3319
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 5323.1942 | Val Loss: 4468.4343
+Epoch 50, Train Loss: 549.9915 | Val Loss: 343.1540
+Epoch 100, Train Loss: 436.7071 | Val Loss: 360.7615
+Test Loss: 962.7586
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1423.9381 | Val Loss: 316.0913
+Epoch 50, Train Loss: 401.6217 | Val Loss: 476.7007
+Epoch 100, Train Loss: 356.0787 | Val Loss: 322.3883
+Epoch 150, Train Loss: 330.0269 | Val Loss: 466.1625
+Test Loss: 784.1230
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 3060.0748 | Val Loss: 1419.6934
+Epoch 50, Train Loss: 515.5314 | Val Loss: 622.7643
+Epoch 100, Train Loss: 449.7048 | Val Loss: 596.6031
+Epoch 150, Train Loss: 404.8047 | Val Loss: 534.3279
+Test Loss: 1224.5991
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 11617.0446 | Val Loss: 2715.2296
+Epoch 50, Train Loss: 904.3664 | Val Loss: 309.1997
+Epoch 100, Train Loss: 698.7383 | Val Loss: 292.6488
+Epoch 150, Train Loss: 624.5018 | Val Loss: 343.1902
+Test Loss: 705.0333
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1257.9180 | Val Loss: 486.4226
+Epoch 50, Train Loss: 334.5532 | Val Loss: 1498.0171
+Epoch 100, Train Loss: 271.2135 | Val Loss: 733.3158
+Epoch 150, Train Loss: 252.6988 | Val Loss: 518.8093
+Test Loss: 844.4863
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2361.4641 | Val Loss: 582.4050
+Epoch 50, Train Loss: 370.8824 | Val Loss: 682.8078
+Epoch 100, Train Loss: 274.4812 | Val Loss: 433.6714
+Epoch 150, Train Loss: 227.3922 | Val Loss: 547.6180
+Test Loss: 1319.8994
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 8007.1482 | Val Loss: 3600.3372
+Epoch 50, Train Loss: 643.9937 | Val Loss: 243.0893
+Epoch 100, Train Loss: 532.2443 | Val Loss: 270.8530
+Epoch 150, Train Loss: 478.5296 | Val Loss: 310.8719
+Test Loss: 547.7787
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1497.4077 | Val Loss: 603.2328
+Epoch 50, Train Loss: 396.5728 | Val Loss: 443.7478
+Epoch 100, Train Loss: 347.8815 | Val Loss: 354.9625
+Epoch 150, Train Loss: 329.5867 | Val Loss: 434.3746
+Test Loss: 552.4900
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2417.3854 | Val Loss: 1128.7192
+Epoch 50, Train Loss: 460.6127 | Val Loss: 399.9151
+Epoch 100, Train Loss: 364.2997 | Val Loss: 384.5683
+Epoch 150, Train Loss: 320.2923 | Val Loss: 488.8482
+Test Loss: 764.8146
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 10193.4138 | Val Loss: 2948.2518
+Epoch 50, Train Loss: 772.0091 | Val Loss: 292.8048
+Epoch 100, Train Loss: 628.6419 | Val Loss: 281.7390
+Epoch 150, Train Loss: 564.3454 | Val Loss: 309.7455
+Test Loss: 670.3951
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1321.3622 | Val Loss: 347.1819
+Epoch 50, Train Loss: 333.0685 | Val Loss: 399.1566
+Epoch 100, Train Loss: 281.1869 | Val Loss: 368.7992
+Epoch 150, Train Loss: 256.0521 | Val Loss: 327.9428
+Test Loss: 1474.2276
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 1926.4111 | Val Loss: 374.9422
+Epoch 50, Train Loss: 331.3310 | Val Loss: 487.0827
+Epoch 100, Train Loss: 221.5763 | Val Loss: 415.6631
+Epoch 150, Train Loss: 168.2262 | Val Loss: 543.5487
+Test Loss: 647.1103
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6323.9067 | Val Loss: 4805.2916
+Epoch 50, Train Loss: 595.9160 | Val Loss: 315.9941
+Epoch 100, Train Loss: 481.8856 | Val Loss: 310.3769
+Epoch 150, Train Loss: 415.9889 | Val Loss: 317.9122
+Test Loss: 625.3210
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1400.2654 | Val Loss: 316.3022
+Epoch 50, Train Loss: 397.8531 | Val Loss: 476.7815
+Epoch 100, Train Loss: 341.9003 | Val Loss: 363.9404
+Epoch 150, Train Loss: 316.7038 | Val Loss: 451.7617
+Test Loss: 680.6686
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2331.4195 | Val Loss: 877.7779
+Epoch 50, Train Loss: 394.2513 | Val Loss: 288.0830
+Epoch 100, Train Loss: 318.5693 | Val Loss: 413.7538
+Epoch 150, Train Loss: 280.5371 | Val Loss: 262.6207
+Test Loss: 896.1151
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 8039.5066 | Val Loss: 3999.3927
+Epoch 50, Train Loss: 708.4582 | Val Loss: 286.0236
+Epoch 100, Train Loss: 586.3373 | Val Loss: 314.6452
+Epoch 150, Train Loss: 533.2366 | Val Loss: 349.9954
+Test Loss: 622.7431
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1402.4540 | Val Loss: 344.0750
+Epoch 50, Train Loss: 385.8415 | Val Loss: 347.2900
+Epoch 100, Train Loss: 308.2825 | Val Loss: 416.2735
+Epoch 150, Train Loss: 285.6197 | Val Loss: 589.2122
+Test Loss: 1123.2103
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 1922.8341 | Val Loss: 379.2154
+Epoch 50, Train Loss: 304.0395 | Val Loss: 424.3666
+Epoch 100, Train Loss: 192.8070 | Val Loss: 629.9074
+Epoch 150, Train Loss: 146.5170 | Val Loss: 714.5701
+Test Loss: 883.0583
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.3, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6033.5769 | Val Loss: 5546.2944
+Epoch 50, Train Loss: 550.4175 | Val Loss: 336.1054
+Epoch 100, Train Loss: 427.0229 | Val Loss: 484.1293
+Epoch 150, Train Loss: 360.8376 | Val Loss: 496.4248
+Test Loss: 1627.9245
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1481.1183 | Val Loss: 392.1129
+Epoch 50, Train Loss: 403.9233 | Val Loss: 597.1904
+Test Loss: 1102.1934
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2878.0100 | Val Loss: 503.3369
+Epoch 50, Train Loss: 510.3649 | Val Loss: 312.6214
+Test Loss: 510.8509
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 11689.1288 | Val Loss: 2832.1633
+Epoch 50, Train Loss: 788.7035 | Val Loss: 268.1818
+Test Loss: 459.3265
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1366.2595 | Val Loss: 366.0792
+Epoch 50, Train Loss: 331.7865 | Val Loss: 427.0955
+Test Loss: 1322.5948
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2134.0712 | Val Loss: 884.3188
+Epoch 50, Train Loss: 390.9124 | Val Loss: 337.4834
+Test Loss: 1034.1951
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 8420.8399 | Val Loss: 3870.8217
+Epoch 50, Train Loss: 652.3817 | Val Loss: 256.4934
+Test Loss: 426.7179
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1486.2474 | Val Loss: 506.3792
+Epoch 50, Train Loss: 387.3044 | Val Loss: 297.3030
+Test Loss: 402.6833
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2494.8020 | Val Loss: 964.8476
+Epoch 50, Train Loss: 445.3291 | Val Loss: 543.6090
+Test Loss: 1081.7409
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 8988.4832 | Val Loss: 5398.1852
+Epoch 50, Train Loss: 748.5667 | Val Loss: 279.9356
+Test Loss: 499.7289
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1300.0393 | Val Loss: 407.9015
+Epoch 50, Train Loss: 315.6849 | Val Loss: 346.9763
+Test Loss: 580.3337
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 1953.3936 | Val Loss: 647.8558
+Epoch 50, Train Loss: 321.7640 | Val Loss: 568.0761
+Test Loss: 842.7969
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6564.7246 | Val Loss: 3690.7752
+Epoch 50, Train Loss: 566.5663 | Val Loss: 379.1856
+Test Loss: 1142.5651
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1355.0506 | Val Loss: 432.8223
+Epoch 50, Train Loss: 419.1737 | Val Loss: 1179.3862
+Test Loss: 4688.6519
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2527.5294 | Val Loss: 960.9853
+Epoch 50, Train Loss: 454.6251 | Val Loss: 383.9750
+Test Loss: 803.8700
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 8443.8249 | Val Loss: 2298.4062
+Epoch 50, Train Loss: 650.1627 | Val Loss: 297.5644
+Test Loss: 569.6421
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1468.6890 | Val Loss: 400.3413
+Epoch 50, Train Loss: 326.4113 | Val Loss: 556.0251
+Test Loss: 832.5440
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 1906.7851 | Val Loss: 395.3683
+Epoch 50, Train Loss: 280.6789 | Val Loss: 341.3080
+Test Loss: 863.3203
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6070.0871 | Val Loss: 5313.9116
+Epoch 50, Train Loss: 537.6235 | Val Loss: 325.0180
+Test Loss: 836.2913
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1345.9353 | Val Loss: 456.4251
+Epoch 50, Train Loss: 381.5254 | Val Loss: 350.9372
+Epoch 100, Train Loss: 340.6126 | Val Loss: 716.4482
+Test Loss: 1962.8000
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2913.8470 | Val Loss: 1418.3466
+Epoch 50, Train Loss: 526.5541 | Val Loss: 393.2006
+Epoch 100, Train Loss: 446.4705 | Val Loss: 427.0021
+Test Loss: 620.2162
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 11198.3539 | Val Loss: 2657.5744
+Epoch 50, Train Loss: 794.7211 | Val Loss: 274.9711
+Epoch 100, Train Loss: 663.1312 | Val Loss: 313.6772
+Test Loss: 458.7071
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1283.3202 | Val Loss: 308.0101
+Epoch 50, Train Loss: 325.1591 | Val Loss: 289.7387
+Epoch 100, Train Loss: 296.6291 | Val Loss: 421.5029
+Test Loss: 1312.8794
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2115.2026 | Val Loss: 531.7286
+Epoch 50, Train Loss: 391.7101 | Val Loss: 547.1852
+Epoch 100, Train Loss: 310.5631 | Val Loss: 410.5443
+Test Loss: 870.0429
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 8129.5764 | Val Loss: 4642.1018
+Epoch 50, Train Loss: 633.5943 | Val Loss: 268.4418
+Epoch 100, Train Loss: 529.7151 | Val Loss: 339.0232
+Test Loss: 499.2209
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1325.6858 | Val Loss: 483.9020
+Epoch 50, Train Loss: 415.6338 | Val Loss: 391.6468
+Epoch 100, Train Loss: 381.8147 | Val Loss: 613.5671
+Test Loss: 935.6649
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2392.1693 | Val Loss: 681.8393
+Epoch 50, Train Loss: 455.9359 | Val Loss: 647.0616
+Epoch 100, Train Loss: 372.1784 | Val Loss: 652.2687
+Test Loss: 796.7779
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9129.8496 | Val Loss: 4836.1530
+Epoch 50, Train Loss: 780.5687 | Val Loss: 382.8454
+Epoch 100, Train Loss: 635.2649 | Val Loss: 452.4673
+Test Loss: 560.0177
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1317.6775 | Val Loss: 514.4277
+Epoch 50, Train Loss: 341.8338 | Val Loss: 590.1204
+Epoch 100, Train Loss: 292.6464 | Val Loss: 824.9285
+Test Loss: 937.7549
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2017.2961 | Val Loss: 422.7348
+Epoch 50, Train Loss: 330.1562 | Val Loss: 417.8406
+Epoch 100, Train Loss: 234.7311 | Val Loss: 358.1362
+Test Loss: 1129.3821
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6500.1071 | Val Loss: 4673.2098
+Epoch 50, Train Loss: 563.0654 | Val Loss: 250.8994
+Epoch 100, Train Loss: 471.7314 | Val Loss: 297.3458
+Test Loss: 510.4738
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1401.5726 | Val Loss: 339.1590
+Epoch 50, Train Loss: 437.4554 | Val Loss: 352.6990
+Epoch 100, Train Loss: 383.8210 | Val Loss: 435.2579
+Test Loss: 1275.3243
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2389.0628 | Val Loss: 677.7442
+Epoch 50, Train Loss: 427.6751 | Val Loss: 381.6771
+Epoch 100, Train Loss: 356.7379 | Val Loss: 397.1159
+Test Loss: 727.6945
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 8894.0819 | Val Loss: 2421.2407
+Epoch 50, Train Loss: 670.4401 | Val Loss: 321.4804
+Epoch 100, Train Loss: 545.5291 | Val Loss: 320.9852
+Test Loss: 516.2702
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1415.3293 | Val Loss: 402.9679
+Epoch 50, Train Loss: 357.7148 | Val Loss: 609.1613
+Epoch 100, Train Loss: 277.7431 | Val Loss: 437.7102
+Test Loss: 887.0033
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 1984.8372 | Val Loss: 412.1391
+Epoch 50, Train Loss: 301.5082 | Val Loss: 423.0832
+Epoch 100, Train Loss: 202.9398 | Val Loss: 783.5408
+Test Loss: 1297.3282
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 100, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6050.6636 | Val Loss: 5699.9663
+Epoch 50, Train Loss: 512.2285 | Val Loss: 339.6853
+Epoch 100, Train Loss: 405.2722 | Val Loss: 406.8761
+Test Loss: 923.7293
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1525.7782 | Val Loss: 548.7057
+Epoch 50, Train Loss: 419.8821 | Val Loss: 265.2582
+Epoch 100, Train Loss: 355.6533 | Val Loss: 356.3735
+Epoch 150, Train Loss: 319.7943 | Val Loss: 442.8277
+Test Loss: 1037.5486
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2721.1097 | Val Loss: 1210.1760
+Epoch 50, Train Loss: 478.1779 | Val Loss: 437.0551
+Epoch 100, Train Loss: 406.1971 | Val Loss: 477.5318
+Epoch 150, Train Loss: 361.4613 | Val Loss: 608.9707
+Test Loss: 1243.9934
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 11473.3616 | Val Loss: 2695.5117
+Epoch 50, Train Loss: 780.7956 | Val Loss: 283.8696
+Epoch 100, Train Loss: 659.4868 | Val Loss: 246.0523
+Epoch 150, Train Loss: 600.4519 | Val Loss: 318.9453
+Test Loss: 758.4610
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1265.4488 | Val Loss: 315.7972
+Epoch 50, Train Loss: 331.0907 | Val Loss: 490.2165
+Epoch 100, Train Loss: 270.9596 | Val Loss: 597.4629
+Epoch 150, Train Loss: 261.7281 | Val Loss: 479.0986
+Test Loss: 656.0278
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 2167.1892 | Val Loss: 1030.1420
+Epoch 50, Train Loss: 375.8567 | Val Loss: 392.3951
+Epoch 100, Train Loss: 285.3179 | Val Loss: 689.2142
+Epoch 150, Train Loss: 244.4450 | Val Loss: 538.0340
+Test Loss: 636.9009
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 2, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 8202.3029 | Val Loss: 3926.3359
+Epoch 50, Train Loss: 656.5942 | Val Loss: 358.8361
+Epoch 100, Train Loss: 549.2818 | Val Loss: 366.0100
+Epoch 150, Train Loss: 493.1134 | Val Loss: 343.2024
+Test Loss: 633.3409
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1466.0012 | Val Loss: 453.8167
+Epoch 50, Train Loss: 390.6483 | Val Loss: 585.7639
+Epoch 100, Train Loss: 348.7223 | Val Loss: 1124.5344
+Epoch 150, Train Loss: 321.0372 | Val Loss: 473.0318
+Test Loss: 861.4383
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2610.2606 | Val Loss: 919.6085
+Epoch 50, Train Loss: 424.6855 | Val Loss: 320.1633
+Epoch 100, Train Loss: 353.5101 | Val Loss: 357.8997
+Epoch 150, Train Loss: 321.3610 | Val Loss: 450.8534
+Test Loss: 1010.9983
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 9493.6196 | Val Loss: 4964.3781
+Epoch 50, Train Loss: 700.6745 | Val Loss: 291.4234
+Epoch 100, Train Loss: 578.2211 | Val Loss: 330.6235
+Epoch 150, Train Loss: 522.1609 | Val Loss: 357.5156
+Test Loss: 592.1471
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1282.2814 | Val Loss: 958.9208
+Epoch 50, Train Loss: 352.5820 | Val Loss: 575.1725
+Epoch 100, Train Loss: 298.3524 | Val Loss: 466.7973
+Epoch 150, Train Loss: 276.1981 | Val Loss: 576.3311
+Test Loss: 1302.3784
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 1922.6463 | Val Loss: 333.5342
+Epoch 50, Train Loss: 318.9835 | Val Loss: 361.8810
+Epoch 100, Train Loss: 241.4388 | Val Loss: 477.7652
+Epoch 150, Train Loss: 179.0349 | Val Loss: 503.9121
+Test Loss: 970.2936
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 3, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6940.3283 | Val Loss: 6012.0971
+Epoch 50, Train Loss: 588.4636 | Val Loss: 290.8104
+Epoch 100, Train Loss: 478.7710 | Val Loss: 392.6648
+Epoch 150, Train Loss: 415.6820 | Val Loss: 482.0864
+Test Loss: 1931.4569
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.01}
+Epoch 0, Train Loss: 1357.2526 | Val Loss: 301.5298
+Epoch 50, Train Loss: 435.7106 | Val Loss: 445.9333
+Epoch 100, Train Loss: 389.3855 | Val Loss: 738.0079
+Epoch 150, Train Loss: 378.4537 | Val Loss: 775.9947
+Test Loss: 2652.9157
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.001}
+Epoch 0, Train Loss: 2538.3596 | Val Loss: 965.0905
+Epoch 50, Train Loss: 424.1891 | Val Loss: 541.4704
+Epoch 100, Train Loss: 352.3699 | Val Loss: 344.4589
+Epoch 150, Train Loss: 316.1930 | Val Loss: 424.1623
+Test Loss: 1212.1976
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 32, 'lr': 0.0001}
+Epoch 0, Train Loss: 8634.6632 | Val Loss: 3558.8540
+Epoch 50, Train Loss: 689.5229 | Val Loss: 319.4714
+Epoch 100, Train Loss: 583.3474 | Val Loss: 321.6241
+Epoch 150, Train Loss: 529.1162 | Val Loss: 350.7041
+Test Loss: 736.4338
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.01}
+Epoch 0, Train Loss: 1317.9250 | Val Loss: 617.8031
+Epoch 50, Train Loss: 339.0876 | Val Loss: 357.5003
+Epoch 100, Train Loss: 281.2235 | Val Loss: 458.5682
+Epoch 150, Train Loss: 261.0753 | Val Loss: 526.5733
+Test Loss: 970.0464
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.001}
+Epoch 0, Train Loss: 1855.2920 | Val Loss: 314.4403
+Epoch 50, Train Loss: 297.7011 | Val Loss: 342.5865
+Epoch 100, Train Loss: 183.3924 | Val Loss: 351.8715
+Epoch 150, Train Loss: 147.7259 | Val Loss: 355.3093
+Test Loss: 763.7548
+
+Hyperparameters: {'drop_out': False, 'drop_value': 0.4, 'epochs': 150, 'hidden_layers': 4, 'hidden_size': 64, 'lr': 0.0001}
+Epoch 0, Train Loss: 6365.2205 | Val Loss: 4605.2621
+Epoch 50, Train Loss: 518.7616 | Val Loss: 362.8640
+Epoch 100, Train Loss: 431.8456 | Val Loss: 346.0866
+Epoch 150, Train Loss: 384.3121 | Val Loss: 371.5791
+Test Loss: 890.0084
+
+
+Best Hyperparameters:
+{'drop_out': False, 'drop_value': 0.4, 'epochs': 50, 'hidden_layers': 3, 'hidden_size': 32, 'lr': 0.01}
+Best Test Loss: 402.6833
